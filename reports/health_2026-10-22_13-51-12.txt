@@ -1,0 +1,20 @@
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 01:51:13 PM UTC 2026
+Uptime   : up 17 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 10%
+Memory Usage : 61%
+Disk Usage   : 31%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High CPU Usage!
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
