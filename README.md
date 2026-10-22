@@ -99,25 +99,22 @@ instructions in the project documentation.
 
 ## Screenshots
 
-### Main Dashboard
+## Screenshots
 
-![LinuxOps Dashboard](docs/screenshots/21-main-dashboard.png)
+### Main Dashboard
+![LinuxOps Dashboard](screenshots/21-main-dashboard.png)
 
 ### Health Monitoring
-
-![Health Monitoring](docs/screenshots/02-health-monitoring.png)
+![Health Monitoring](screenshots/02-health-monitoring.png)
 
 ### Backup Automation
-
-![Backup Automation](docs/screenshots/04-backup-execution.png)
+![Backup Automation](screenshots/04-backup-execution.png)
 
 ### Security Monitoring
-
-![Security Report](docs/screenshots/09-security-report.png)
+![Security Report](screenshots/09-security-report.png)
 
 ### Central Automation
-
-![Automation](docs/screenshots/23-all-automation.png)
+![Automation](screenshots/23-all-automation.png)
 
 ## Security Considerations
 
