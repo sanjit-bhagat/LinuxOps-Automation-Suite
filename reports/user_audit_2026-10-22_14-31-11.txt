@@ -1,0 +1,40 @@
+==========================================
+       LINUXOPS USER AUDIT REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 02:31:11 PM UTC 2026
+
+1. TOTAL LOCAL USER ACCOUNTS
+------------------------------------------
+57
+
+2. UID 0 ACCOUNTS
+------------------------------------------
+root
+
+3. ACCOUNTS WITH INTERACTIVE SHELLS
+------------------------------------------
+root : /bin/bash
+vboxuser : /bin/bash
+developer1 : /bin/sh
+developer2 : /bin/sh
+tester1 : /bin/sh
+tester2 : /bin/sh
+dbadmin : /bin/sh
+deploy : /bin/sh
+postgres : /bin/bash
+
+4. SUDO GROUP MEMBERS
+------------------------------------------
+sudo:x:27:vboxuser
+
+5. WORLD-WRITABLE FILE AUDIT
+------------------------------------------
+Scanning project directory...
+
+6. SECURITY SUMMARY
+------------------------------------------
+UID 0 account check passed.
+
+Audit completed.
+==========================================
