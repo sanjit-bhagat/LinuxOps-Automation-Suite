@@ -1,0 +1,425 @@
+2026-10-22 15:02:19 - STARTED: health_monitor.sh
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:02:20 PM UTC 2026
+Uptime   : up 1 hour, 28 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 2%
+Memory Usage : 61%
+Disk Usage   : 30%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High CPU Usage!
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
+2026-10-22 15:02:20 - SUCCESS: health_monitor.sh
+2026-10-22 15:02:28 - STARTED: backup_manager.sh
+2026-10-22 15:02:28 - Backup process started.
+2026-10-22 15:02:28 - Creating backup...
+2026-10-22 15:02:28 - Backup created: /home/vboxuser/LinuxOps-Automation-Suite/backups/linuxops_backup_2026-10-22_15-02-28.tar.gz
+2026-10-22 15:02:28 - Backup integrity verification successful.
+2026-10-22 15:02:28 - Checking old backups...
+2026-10-22 15:02:28 - Backup retention cleanup completed.
+2026-10-22 15:02:28 - Backup process finished successfully.
+2026-10-22 15:02:28 - SUCCESS: backup_manager.sh
+2026-10-22 15:07:23 - STARTED: health_monitor.sh
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:07:24 PM UTC 2026
+Uptime   : up 1 hour, 33 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 0%
+Memory Usage : 63%
+Disk Usage   : 30%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
+2026-10-22 15:07:24 - SUCCESS: health_monitor.sh
+2026-10-22 15:07:24 - STARTED: backup_manager.sh
+2026-10-22 15:07:24 - Backup process started.
+2026-10-22 15:07:24 - Creating backup...
+2026-10-22 15:07:24 - Backup created: /home/vboxuser/LinuxOps-Automation-Suite/backups/linuxops_backup_2026-10-22_15-07-24.tar.gz
+2026-10-22 15:07:24 - Backup integrity verification successful.
+2026-10-22 15:07:24 - Checking old backups...
+2026-10-22 15:07:24 - Backup retention cleanup completed.
+2026-10-22 15:07:24 - Backup process finished successfully.
+2026-10-22 15:07:24 - SUCCESS: backup_manager.sh
+2026-10-22 15:07:24 - STARTED: log_analyzer.sh
+2026-10-22 15:07:24 - Security log analysis started.
+==========================================
+       LINUXOPS SECURITY REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:07:24 PM UTC 2026
+
+SSH AUTHENTICATION ANALYSIS
+------------------------------------------
+Failed Login Events     : 2
+Successful Login Events : 0
+
+SYSTEM LOG ANALYSIS
+------------------------------------------
+Error Matches   : 463
+Warning Matches : 151
+
+SECURITY STATUS
+------------------------------------------
+No excessive failed SSH login events detected.
+
+RECENT MATCHING LOG ENTRIES
+------------------------------------------
+grep: /tmp/tmp.s5kVtw4RLY: binary file matches
+2026-09-01T11:49:06.539661+00:00 ubuntu systemd[2039]: xdg-document-portal.service: Failed to kill control group /user.slice/user-60578.slice/user@60578.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+2026-09-01T11:49:06.542570+00:00 ubuntu kernel: audit: type=1400 audit(1788263346.529:267): apparmor="DENIED" operation="mount" class="mount" info="failed mntpnt match" error=-13 profile="fusermount3" name="/" pid=4420 comm="fusermount3" flags="rw, rprivate"
+2026-09-01T11:49:07.033841+00:00 ubuntu gnome-shell[4272]: Failed to initialize glamor, falling back to sw
+2026-09-01T11:49:07.592876+00:00 ubuntu gsd-xsettings[4627]: Failed to get current UI scaling factor: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.Mutter.X11" does not exist
+2026-09-01T11:49:07.981267+00:00 ubuntu gnome-shell[4722]: > Warning:          Unsupported maximum keycode 708, clipping.
+2026-09-01T11:49:07.987744+00:00 ubuntu gnome-shell[4722]: > Warning:          Virtual modifier Hyper multiply defined
+2026-09-01T11:49:07.987886+00:00 ubuntu gnome-shell[4722]: > Warning:          Virtual modifier ScrollLock multiply defined
+2026-09-01T11:49:07.987951+00:00 ubuntu gnome-shell[4722]: Errors from xkbcomp are not fatal to the X server
+2026-09-01T11:49:08.177602+00:00 ubuntu gnome-shell[4695]: libEGL warning: DRI3 error: Could not get DRI3 device
+2026-09-01T11:49:08.177929+00:00 ubuntu gnome-shell[4695]: libEGL warning: Ensure your X server supports DRI3 to get accelerated rendering
+
+==========================================
+2026-10-22 15:07:24 - Security report generated: /home/vboxuser/LinuxOps-Automation-Suite/reports/security_report_2026-10-22_15-07-24.txt
+2026-10-22 15:07:24 - Security log analysis completed.
+2026-10-22 15:07:24 - SUCCESS: log_analyzer.sh
+2026-10-22 15:07:24 - STARTED: user_audit.sh
+2026-10-22 15:07:24 - User and permission audit started.
+==========================================
+       LINUXOPS USER AUDIT REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:07:24 PM UTC 2026
+
+1. TOTAL LOCAL USER ACCOUNTS
+------------------------------------------
+57
+
+2. UID 0 ACCOUNTS
+------------------------------------------
+root
+
+3. ACCOUNTS WITH INTERACTIVE SHELLS
+------------------------------------------
+root : /bin/bash
+vboxuser : /bin/bash
+developer1 : /bin/sh
+developer2 : /bin/sh
+tester1 : /bin/sh
+tester2 : /bin/sh
+dbadmin : /bin/sh
+deploy : /bin/sh
+postgres : /bin/bash
+
+4. SUDO GROUP MEMBERS
+------------------------------------------
+sudo:x:27:vboxuser
+
+5. WORLD-WRITABLE FILE AUDIT
+------------------------------------------
+Scanning project directory...
+/home/vboxuser/LinuxOps-Automation-Suite/tests/permission_demo/test.txt
+
+6. SECURITY SUMMARY
+------------------------------------------
+UID 0 account check passed.
+
+Audit completed.
+==========================================
+2026-10-22 15:07:24 - Audit report generated: /home/vboxuser/LinuxOps-Automation-Suite/reports/user_audit_2026-10-22_15-07-24.txt
+2026-10-22 15:07:24 - User and permission audit completed.
+2026-10-22 15:07:24 - SUCCESS: user_audit.sh
+2026-10-22 15:14:52 - STARTED: health_monitor.sh
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:14:53 PM UTC 2026
+Uptime   : up 1 hour, 41 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 3%
+Memory Usage : 62%
+Disk Usage   : 30%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High CPU Usage!
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
+2026-10-22 15:14:53 - SUCCESS: health_monitor.sh
+2026-10-22 15:14:59 - STARTED: health_monitor.sh
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:15:00 PM UTC 2026
+Uptime   : up 1 hour, 41 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 2%
+Memory Usage : 61%
+Disk Usage   : 30%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High CPU Usage!
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
+2026-10-22 15:15:00 - SUCCESS: health_monitor.sh
+2026-10-22 15:15:23 - STARTED: health_monitor.sh
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:15:24 PM UTC 2026
+Uptime   : up 1 hour, 41 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 1%
+Memory Usage : 62%
+Disk Usage   : 30%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High CPU Usage!
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
+2026-10-22 15:15:24 - SUCCESS: health_monitor.sh
+2026-10-22 15:15:24 - STARTED: backup_manager.sh
+2026-10-22 15:15:24 - Backup process started.
+2026-10-22 15:15:24 - Creating backup...
+2026-10-22 15:15:24 - Backup created: /home/vboxuser/LinuxOps-Automation-Suite/backups/linuxops_backup_2026-10-22_15-15-24.tar.gz
+2026-10-22 15:15:24 - Backup integrity verification successful.
+2026-10-22 15:15:24 - Checking old backups...
+2026-10-22 15:15:24 - Backup retention cleanup completed.
+2026-10-22 15:15:24 - Backup process finished successfully.
+2026-10-22 15:15:24 - SUCCESS: backup_manager.sh
+2026-10-22 15:15:24 - STARTED: log_analyzer.sh
+2026-10-22 15:15:24 - Security log analysis started.
+==========================================
+       LINUXOPS SECURITY REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:15:24 PM UTC 2026
+
+SSH AUTHENTICATION ANALYSIS
+------------------------------------------
+Failed Login Events     : 2
+Successful Login Events : 0
+
+SYSTEM LOG ANALYSIS
+------------------------------------------
+Error Matches   : 463
+Warning Matches : 151
+
+SECURITY STATUS
+------------------------------------------
+No excessive failed SSH login events detected.
+
+RECENT MATCHING LOG ENTRIES
+------------------------------------------
+grep: /tmp/tmp.OoGb4da1kX: binary file matches
+2026-09-01T11:49:06.539661+00:00 ubuntu systemd[2039]: xdg-document-portal.service: Failed to kill control group /user.slice/user-60578.slice/user@60578.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+2026-09-01T11:49:06.542570+00:00 ubuntu kernel: audit: type=1400 audit(1788263346.529:267): apparmor="DENIED" operation="mount" class="mount" info="failed mntpnt match" error=-13 profile="fusermount3" name="/" pid=4420 comm="fusermount3" flags="rw, rprivate"
+2026-09-01T11:49:07.033841+00:00 ubuntu gnome-shell[4272]: Failed to initialize glamor, falling back to sw
+2026-09-01T11:49:07.592876+00:00 ubuntu gsd-xsettings[4627]: Failed to get current UI scaling factor: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.Mutter.X11" does not exist
+2026-09-01T11:49:07.981267+00:00 ubuntu gnome-shell[4722]: > Warning:          Unsupported maximum keycode 708, clipping.
+2026-09-01T11:49:07.987744+00:00 ubuntu gnome-shell[4722]: > Warning:          Virtual modifier Hyper multiply defined
+2026-09-01T11:49:07.987886+00:00 ubuntu gnome-shell[4722]: > Warning:          Virtual modifier ScrollLock multiply defined
+2026-09-01T11:49:07.987951+00:00 ubuntu gnome-shell[4722]: Errors from xkbcomp are not fatal to the X server
+2026-09-01T11:49:08.177602+00:00 ubuntu gnome-shell[4695]: libEGL warning: DRI3 error: Could not get DRI3 device
+2026-09-01T11:49:08.177929+00:00 ubuntu gnome-shell[4695]: libEGL warning: Ensure your X server supports DRI3 to get accelerated rendering
+
+==========================================
+2026-10-22 15:15:24 - Security report generated: /home/vboxuser/LinuxOps-Automation-Suite/reports/security_report_2026-10-22_15-15-24.txt
+2026-10-22 15:15:24 - Security log analysis completed.
+2026-10-22 15:15:24 - SUCCESS: log_analyzer.sh
+2026-10-22 15:15:24 - STARTED: user_audit.sh
+2026-10-22 15:15:24 - User and permission audit started.
+==========================================
+       LINUXOPS USER AUDIT REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:15:24 PM UTC 2026
+
+1. TOTAL LOCAL USER ACCOUNTS
+------------------------------------------
+57
+
+2. UID 0 ACCOUNTS
+------------------------------------------
+root
+
+3. ACCOUNTS WITH INTERACTIVE SHELLS
+------------------------------------------
+root : /bin/bash
+vboxuser : /bin/bash
+developer1 : /bin/sh
+developer2 : /bin/sh
+tester1 : /bin/sh
+tester2 : /bin/sh
+dbadmin : /bin/sh
+deploy : /bin/sh
+postgres : /bin/bash
+
+4. SUDO GROUP MEMBERS
+------------------------------------------
+sudo:x:27:vboxuser
+
+5. WORLD-WRITABLE FILE AUDIT
+------------------------------------------
+Scanning project directory...
+/home/vboxuser/LinuxOps-Automation-Suite/tests/permission_demo/test.txt
+
+6. SECURITY SUMMARY
+------------------------------------------
+UID 0 account check passed.
+
+Audit completed.
+==========================================
+2026-10-22 15:15:24 - Audit report generated: /home/vboxuser/LinuxOps-Automation-Suite/reports/user_audit_2026-10-22_15-15-24.txt
+2026-10-22 15:15:24 - User and permission audit completed.
+2026-10-22 15:15:24 - SUCCESS: user_audit.sh
+2026-10-22 15:26:12 - STARTED: health_monitor.sh
+======================================
+       LINUXOPS HEALTH REPORT
+======================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:26:13 PM UTC 2026
+Uptime   : up 1 hour, 52 minutes
+
+SYSTEM RESOURCE USAGE
+--------------------------------------
+CPU Usage    : 4%
+Memory Usage : 63%
+Disk Usage   : 30%
+
+SYSTEM ALERTS
+--------------------------------------
+WARNING: High CPU Usage!
+WARNING: High Memory Usage!
+WARNING: High Disk Usage!
+
+======================================
+2026-10-22 15:26:13 - SUCCESS: health_monitor.sh
+2026-10-22 15:26:13 - STARTED: backup_manager.sh
+2026-10-22 15:26:13 - Backup process started.
+2026-10-22 15:26:13 - Creating backup...
+2026-10-22 15:26:13 - Backup created: /home/vboxuser/LinuxOps-Automation-Suite/backups/linuxops_backup_2026-10-22_15-26-13.tar.gz
+2026-10-22 15:26:13 - Backup integrity verification successful.
+2026-10-22 15:26:13 - Checking old backups...
+2026-10-22 15:26:13 - Backup retention cleanup completed.
+2026-10-22 15:26:13 - Backup process finished successfully.
+2026-10-22 15:26:13 - SUCCESS: backup_manager.sh
+2026-10-22 15:26:13 - STARTED: log_analyzer.sh
+2026-10-22 15:26:13 - Security log analysis started.
+==========================================
+       LINUXOPS SECURITY REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:26:13 PM UTC 2026
+
+SSH AUTHENTICATION ANALYSIS
+------------------------------------------
+Failed Login Events     : 2
+Successful Login Events : 0
+
+SYSTEM LOG ANALYSIS
+------------------------------------------
+Error Matches   : 463
+Warning Matches : 151
+
+SECURITY STATUS
+------------------------------------------
+No excessive failed SSH login events detected.
+
+RECENT MATCHING LOG ENTRIES
+------------------------------------------
+grep: /tmp/tmp.97j9KEZsJY: binary file matches
+2026-09-01T11:49:06.539661+00:00 ubuntu systemd[2039]: xdg-document-portal.service: Failed to kill control group /user.slice/user-60578.slice/user@60578.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+2026-09-01T11:49:06.542570+00:00 ubuntu kernel: audit: type=1400 audit(1788263346.529:267): apparmor="DENIED" operation="mount" class="mount" info="failed mntpnt match" error=-13 profile="fusermount3" name="/" pid=4420 comm="fusermount3" flags="rw, rprivate"
+2026-09-01T11:49:07.033841+00:00 ubuntu gnome-shell[4272]: Failed to initialize glamor, falling back to sw
+2026-09-01T11:49:07.592876+00:00 ubuntu gsd-xsettings[4627]: Failed to get current UI scaling factor: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.Mutter.X11" does not exist
+2026-09-01T11:49:07.981267+00:00 ubuntu gnome-shell[4722]: > Warning:          Unsupported maximum keycode 708, clipping.
+2026-09-01T11:49:07.987744+00:00 ubuntu gnome-shell[4722]: > Warning:          Virtual modifier Hyper multiply defined
+2026-09-01T11:49:07.987886+00:00 ubuntu gnome-shell[4722]: > Warning:          Virtual modifier ScrollLock multiply defined
+2026-09-01T11:49:07.987951+00:00 ubuntu gnome-shell[4722]: Errors from xkbcomp are not fatal to the X server
+2026-09-01T11:49:08.177602+00:00 ubuntu gnome-shell[4695]: libEGL warning: DRI3 error: Could not get DRI3 device
+2026-09-01T11:49:08.177929+00:00 ubuntu gnome-shell[4695]: libEGL warning: Ensure your X server supports DRI3 to get accelerated rendering
+
+==========================================
+2026-10-22 15:26:13 - Security report generated: /home/vboxuser/LinuxOps-Automation-Suite/reports/security_report_2026-10-22_15-26-13.txt
+2026-10-22 15:26:13 - Security log analysis completed.
+2026-10-22 15:26:13 - SUCCESS: log_analyzer.sh
+2026-10-22 15:26:13 - STARTED: user_audit.sh
+2026-10-22 15:26:13 - User and permission audit started.
+==========================================
+       LINUXOPS USER AUDIT REPORT
+==========================================
+Hostname : ubuntu
+Date     : Thu Oct 22 03:26:13 PM UTC 2026
+
+1. TOTAL LOCAL USER ACCOUNTS
+------------------------------------------
+57
+
+2. UID 0 ACCOUNTS
+------------------------------------------
+root
+
+3. ACCOUNTS WITH INTERACTIVE SHELLS
+------------------------------------------
+root : /bin/bash
+vboxuser : /bin/bash
+developer1 : /bin/sh
+developer2 : /bin/sh
+tester1 : /bin/sh
+tester2 : /bin/sh
+dbadmin : /bin/sh
+deploy : /bin/sh
+postgres : /bin/bash
+
+4. SUDO GROUP MEMBERS
+------------------------------------------
+sudo:x:27:vboxuser
+
+5. WORLD-WRITABLE FILE AUDIT
+------------------------------------------
+Scanning project directory...
+/home/vboxuser/LinuxOps-Automation-Suite/tests/permission_demo/test.txt
+
+6. SECURITY SUMMARY
+------------------------------------------
+UID 0 account check passed.
+
+Audit completed.
+==========================================
+2026-10-22 15:26:13 - Audit report generated: /home/vboxuser/LinuxOps-Automation-Suite/reports/user_audit_2026-10-22_15-26-13.txt
+2026-10-22 15:26:13 - User and permission audit completed.
+2026-10-22 15:26:13 - SUCCESS: user_audit.sh
